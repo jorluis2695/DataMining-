@@ -21,4 +21,5 @@ def valorfecha(x, fr):
     if fr=="m":
         return p_datetime.month
 
-
+df['year']=df['tiempo'].apply(lambda x: valorfecha(x,"y"))
+df['mes']=df['tiempo'].apply(lambda x: valorfecha(x,"m"))
