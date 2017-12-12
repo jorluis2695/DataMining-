@@ -14,4 +14,11 @@ df =pd.read_csv("fileN01.txt",
                                "corriente_u","corriente_v","corriente_w"])
 
 
+def valorfecha(x, fr):
+    p_datetime =  datetime.fromordinal(int(x)) + timedelta(days=x%1) - timedelta(days = 366)
+    if fr=="y":
+        return p_datetime.year
+    if fr=="m":
+        return p_datetime.month
+
 
