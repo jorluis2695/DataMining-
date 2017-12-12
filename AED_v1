@@ -1,0 +1,17 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.dates import DateFormatter, MonthLocator, WeekdayLocator
+from matplotlib.dates import date2num
+from pylab import rcParams
+import plotly 
+import plotly.plotly as py
+import seaborn as sns
+from datetime import datetime, timedelta
+
+df =pd.read_csv("fileN01.txt",
+                sep=",",names=["lon","lat","tiempo", "profundidad","salinidad","nivel_mar","temperatura","esfuerzo_x","esfuerzo_y",
+                               "corriente_u","corriente_v","corriente_w"])
+
+
+
